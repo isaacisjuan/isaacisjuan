@@ -1,0 +1,166 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #f9f9f9;
+  color: #111;
+}
+
+section {
+  padding: 4rem 2rem;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.hero .left {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.hero .subtitle {
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.hero .right {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero .right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  text-decoration: none;
+  color: #444;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(10px); }
+}
+
+/* Thesis Section */
+.thesis {
+  display: flex;
+  flex-wrap: wrap;
+  background: #f4f4f4;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.thesis .img-container {
+  flex: 1 1 250px;
+  max-width: 400px;
+}
+
+.thesis .img-container .label {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.thesis img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.thesis .text {
+  flex: 2 1 300px;
+  max-width: 600px;
+}
+
+.thesis .text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.thesis .text p {
+  line-height: 1.6;
+}
+
+/* Implications Section */
+.implications {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f4f4f4;
+}
+
+.implications .text {
+  flex: 2 1 300px;
+  max-width: 600px;
+}
+
+.implications .text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.implications .text p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.implications .image {
+  flex: 1 1 250px;
+  max-width: 400px;
+}
+
+.implications img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Legacy Section */
+.legacy {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.legacy img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
